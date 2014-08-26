@@ -1,3 +1,4 @@
+#Etsydemo::Application.routes.draw do (added 26/8)
 Rails.application.routes.draw do
   devise_for :users
   resources :listings
