@@ -1,11 +1,27 @@
+
+<%= javascript_include_tag('jquery.masonry.min') %>
+<script>
+
+$.getScript('//cdn.jsdelivr.net/isotope/1.5.25/jquery.isotope.min.js',function(){
+
+  /* activate jquery isotope */
+  $('#posts').imagesLoaded( function(){
+    $('#posts').isotope({
+      itemSelector : '.item'
+    });
+  });
+  
+});
+</script>
+
 <div class="jumbotron">	
 	<h1>Quality items from <br>around the world.</h1>
 	<h2>Discover one-of-a-kind items</h2>
 </div>
 <div class="center">
-	<div class="row">
+	<div class="row" id="posts" >
 	  <% @listings.each do |listing| %>
-		<div class="col-md-3">
+		<div class="col-md-4 item">
 		 <div class="thumbnail">
 		 <%= link_to image_tag(listing.image.url), listing %>
 		    <div class="caption">
@@ -19,6 +35,7 @@
 	 </div>
 </div>
 <br>
+
 
 <% if user_signed_in? %>
 <%= link_to 'New Listing', new_listing_path, class: "btn btn-link" %>

@@ -19,6 +19,9 @@ gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro"
 gem 'devise'
 gem 'stripe'
+gem 'net-ping', '~> 1.7.5'
+gem 'rufus-scheduler', '~> 3.0.9'
+gem 'masonry-rails'
 
 group :production do
 	gem 'pg'
