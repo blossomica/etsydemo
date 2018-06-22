@@ -13,8 +13,8 @@ Ps. No additional info at the moment
 Issues:
 
 1. Paperclip  is deprecated possible solution is to migrate it to active storage. 
-2. Paperclip-dropbox is also obsolter possible solution is to use another file attachment tool (eg. https://shrinerb.com/)
+2. Paperclip-dropbox is also obsolete possible solution is to use another file attachment tool (eg. https://shrinerb.com/)
 
-When and if this changes are made it should be able to run on heroku again. 
+When and if these changes are made, it should be able to run on heroku again. 
 
 
