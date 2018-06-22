@@ -1,5 +1,4 @@
 
-
 Project:
 
 *Description: Online marketplace
@@ -8,5 +7,14 @@ Project:
 Creative Commons with Attribution
 
 Ps. No additional info at the moment
+
+>> Currently deprecated (as of 2018) due to needing various updates to remake it a functional demo project.
+
+Issues:
+
+1. Paperclip  is deprecated possible solution is to migrate it to active storage. 
+2. Paperclip-dropbox is also obsolter possible solution is to use another file attachment tool (eg. https://shrinerb.com/)
+
+When and if this changes are made it should be able to run on heroku again. 
 
 
